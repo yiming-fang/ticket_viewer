@@ -1,1 +1,0 @@
-curl https://zcc978.zendesk.com/api/v2/tickets/count.json -v -u yf2484@columbia.edu:Kqs525100!
