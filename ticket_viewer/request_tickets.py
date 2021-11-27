@@ -1,9 +1,11 @@
 import requests
+from util import *
 
 credentials = 'yf2484@columbia.edu', 'Zendesk2021'
 session = requests.Session()
 session.auth = credentials
 zendesk = 'https://zcc978.zendesk.com'
+
 
 def print_list(list_url):
     response = session.get(list_url)
