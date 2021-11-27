@@ -1,0 +1,1 @@
+curl https://{subdomain}.zendesk.com/api/v2/imports/tickets/create_many.json -v -u yf2484@columbia.edu:Kqs525100! -X POST -d @tickets.json -H "Content-Type: application/json"
