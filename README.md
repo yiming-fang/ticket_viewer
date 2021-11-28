@@ -20,3 +20,10 @@ In the mode for viewing all tickets, tickets are paginated into lists containing
 * Press P to go to the previous page
 * Press M to go back to the main menu
 ```
+
+This project uses unittest framework to do testing.  To run test suites, run the command
+```
+python ticket_viewer/test/ticket_test.py
+```
+
+Finally, the `script` folder contains the shell scripts for creating test data, since the test data has already been created in the test account, there is no need to run it again.
