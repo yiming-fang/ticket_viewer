@@ -1,5 +1,9 @@
 from request_tickets import *
-from util import *
+import sys
+
+sys.path.append("../")
+from ticket_viewer.util import *
+from ticket_viewer.request_tickets import *
 
 zendesk = 'https://zcc978.zendesk.com'
 

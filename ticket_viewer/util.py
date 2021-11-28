@@ -1,5 +1,6 @@
 import requests
-import request_tickets as rt
+import sys
+
 
 def paginate(next_page, prev_page):
     if next_page:
@@ -11,11 +12,11 @@ def paginate(next_page, prev_page):
         option = input()
     while next_page or prev_page:
         if option.lower() == 'n' and next_page:
-            rt.print_list(next_page)
+            return next_page
         elif option.lower() == 'p' and prev_page:
-            rt.print_list(prev_page)
+            return prev_page
         elif option.lower() == 'm':
-            return
+            return None
         else:
             option = input('The command you entered is invalid. Please re-enter: ')
 

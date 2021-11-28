@@ -1,5 +1,9 @@
 import requests
-from util import *
+import sys
+
+sys.path.append("../")
+from ticket_viewer.util import *
+
 
 credentials = 'yf2484@columbia.edu', 'Zendesk2021'
 session = requests.Session()
@@ -20,7 +24,10 @@ def print_list(list_url):
     
     next_page = list_response['next_page']
     prev_page = list_response['previous_page']
-    paginate(next_page, prev_page)
+    page = paginate(next_page, prev_page)
+    if page:
+        print_list(page)
+
 
 def print_single(tid):
     t_url = f'{zendesk}/api/v2/tickets/{str(tid)}'
