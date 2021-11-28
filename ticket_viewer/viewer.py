@@ -1,4 +1,3 @@
-from request_tickets import *
 import sys
 
 sys.path.append("../")
@@ -27,6 +26,9 @@ def main():
         elif option == '2':
             tid = input('Enter ticket number: ')
             print_single(tid)
+
+        else:
+            print('\nThe command you entered is invalid, please re-enter.')
 
 if __name__ == "__main__":
     main()
