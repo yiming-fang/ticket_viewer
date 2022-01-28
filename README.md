@@ -1,4 +1,5 @@
 # zendesk ticket viewer
+by Yiming Fang
 
 First, navigate inside the folder containing this module.
 To use this ticker viewer, open the terminal and run the following command:
